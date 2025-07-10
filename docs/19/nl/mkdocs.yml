@@ -91,3 +91,5 @@ nav:
       - Jira connectivity: apps/jira-connectivity.md
       - Import / Export: apps/import---export.md
   - Release notes: release-notes.md
+extra:
+  generator: false
