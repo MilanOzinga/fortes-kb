@@ -51,17 +51,12 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Apps:
-      - General: apps/general.md
-      - Start: apps/start.md
-      - Insights: apps/insights.md
-      - Agile program: apps/agile-program.md
-      - Teams: apps/teams.md
-      - Approval workflows: apps/approval-workflows.md
-      - Jira connectivity: apps/jira-connectivity.md
-      - Import / Export: apps/import---export.md
-      - Principal Toolbox: apps/principal-toolbox.md
-      - Strategy: apps/strategy.md
-      - Portfolio:
+  - General: apps/general.md
+  - Principal Toolbox: apps/principal-toolbox.md
+  - Start: apps/start.md
+  - Strategy: apps/strategy.md
+  - Insights: apps/insights.md
+  - Portfolio: 
           - Portfolio homepage: apps/portfolio/portfolio-homepage.md
           - Portfolio app in general: apps/portfolio/portfolio-app-in-general.md
           - Overview: apps/portfolio/overview.md
@@ -86,3 +81,15 @@ nav:
       - Azure DevOps connectivity: apps/azure-devops-connectivity.md
       - On premise: apps/on-premise.md
   - Release notes: release-notes.md
+  - Project: apps/project.md
+  - Agile program: apps/agile-program.md
+  - Teams: apps/teams.md
+  - Hours: apps/hours.md
+  - Approval workflows: apps/approval-workflows.md
+  - BI Connectivity: apps/bi-connectivity.md
+  - Jira connectivity: apps/jira-connectivity.md
+  - Azure DevOps connectivity: apps/azure-devops-connectivity.md
+  - Import / Export: apps/import---export.md
+  - On premise: apps/on-premise.md
+  - Release notes: release-notes.md
+
