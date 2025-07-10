@@ -20,15 +20,9 @@ extra_javascript:
   - custom-code/extra.js
   - custom-code/version-lang-switch.js
 
-nav:
-  - Home: index.md
-  - Apps:
-      - Algemeen: apps/general.md
-      - Portfolio:
-          - Overzicht: apps/portfolio.md
-          - Funnel: apps/portfolio/funnel.md
-      - Strategie: apps/strategy.md
-  - Release notes: release-notes.md
+plugins:
+  - awesome-pages
+  - search
 
 markdown_extensions:
   - admonition
