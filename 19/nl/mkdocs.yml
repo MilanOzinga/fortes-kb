@@ -54,7 +54,6 @@ markdown_extensions:
   - pymdownx.tilde
 
 nav:
-  - Release notes: release-notes.md
   - FCC Essentials:
       - Overzicht: index.md
   - Apps:
@@ -93,5 +92,6 @@ nav:
       - Approval workflows: apps/approval-workflows.md
       - Jira connectivity: apps/jira-connectivity.md
       - Import / Export: apps/import---export.md
+  - Release notes: release-notes.md
 extra:
   generator: false
