@@ -20,9 +20,6 @@ extra_javascript:
   - custom-code/extra.js
   - custom-code/version-lang-switch.js
 
-plugins:
-  - awesome-pages
-  - search
 
 markdown_extensions:
   - admonition
@@ -50,3 +47,42 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+
+nav:
+  - Home: index.md
+  - Apps:
+      - General: apps/general.md
+      - Start: apps/start.md
+      - Insights: apps/insights.md
+      - Agile program: apps/agile-program.md
+      - Teams: apps/teams.md
+      - Approval workflows: apps/approval-workflows.md
+      - Jira connectivity: apps/jira-connectivity.md
+      - Import / Export: apps/import---export.md
+      - Principal Toolbox: apps/principal-toolbox.md
+      - Strategy: apps/strategy.md
+      - Portfolio:
+          - Portfolio homepage: apps/portfolio/portfolio-homepage.md
+          - Portfolio app in general: apps/portfolio/portfolio-app-in-general.md
+          - Overview: apps/portfolio/overview.md
+          - Dashboard: apps/portfolio/dashboard.md
+          - Portfolio Objectives: apps/portfolio/portfolio-objectives.md
+          - Funnel: apps/portfolio/funnel.md
+          - Balancing: apps/portfolio/balancing.md
+          - Milestone planning: apps/portfolio/milestone-planning.md
+          - Skill capacity planning: apps/portfolio/skill-capacity-planning.md
+          - Capacity planning: apps/portfolio/capacity-planning.md
+          - Financial Planning: apps/portfolio/financial-planning.md
+          - Financial grid: apps/portfolio/financial-grid.md
+          - Workflows: apps/portfolio/workflows.md
+          - Key Results Tracking: apps/portfolio/key-results-tracking.md
+          - Reporting: apps/portfolio/reporting.md
+          - Issues: apps/portfolio/issues.md
+          - Risks: apps/portfolio/risks.md
+          - Documents: apps/portfolio/documents.md
+      - Project: apps/project.md
+      - Hours: apps/hours.md
+      - BI Connectivity: apps/bi-connectivity.md
+      - Azure DevOps connectivity: apps/azure-devops-connectivity.md
+      - On premise: apps/on-premise.md
+  - Release notes: release-notes.md
