@@ -34,7 +34,6 @@ jobs:
             done
           done
 
-
       - name: Build all versions & languages
         run: |
           VERSIONS="20 19 18"
@@ -47,6 +46,23 @@ jobs:
               fi
             done
           done
+
+      # ---- DIT IS DE NIEUWE STAP VOOR REDIRECT ----
+      - name: Add root redirect index.html
+        run: |
+          echo '<!DOCTYPE html>
+          <html lang="en">
+          <head>
+            <meta http-equiv="refresh" content="0; url=/fortes-kb/20/nl/">
+            <script>
+              window.location.replace("/fortes-kb/20/nl/");
+            </script>
+            <title>Redirecting…</title>
+          </head>
+          <body>
+            <p>Redirecting to the latest documentation…</p>
+          </body>
+          </html>' > site/index.html
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
