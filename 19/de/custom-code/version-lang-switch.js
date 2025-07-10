@@ -11,17 +11,24 @@ window.addEventListener("DOMContentLoaded", function () {
     { code: "de", name: "Deutsch" }
   ];
 
-  // Split het pad: ['', '20', 'nl', ...]
-  const pathParts = window.location.pathname.split("/").filter(Boolean);
+  // Huidige pad uitlezen
+  function getCurrentParts() {
+    return window.location.pathname.split("/").filter(Boolean);
+  }
 
-  // Zoek huidige versie en taal in URL
-  const curVersion = versions.find(v => pathParts[0] === v) || versions[0];
-  const curLang = langs.find(l => pathParts[1] === l.code)?.code || langs[0].code;
+  // Vind huidige versie en taal
+  function getCurVersion(parts) {
+    return versions.find(v => parts[0] === v) || versions[0];
+  }
+  function getCurLang(parts) {
+    return langs.find(l => parts[1] === l.code)?.code || langs[0].code;
+  }
 
-  // Het subpad na versie en taal
-  const subPath = pathParts.slice(2).join("/");
+  // Switchbar maken
+  const pathParts = getCurrentParts();
+  const curVersion = getCurVersion(pathParts);
+  const curLang = getCurLang(pathParts);
 
-  // Bouw de switchbar HTML
   const bar = document.createElement("div");
   bar.id = "fortes-switchbar";
   bar.innerHTML = `
@@ -35,7 +42,7 @@ window.addEventListener("DOMContentLoaded", function () {
     </div>
   `;
 
-  // Plaats direct onder Material-header
+  // Plaats switchbar onder Material-header
   const header = document.querySelector('.md-header');
   if (header && header.parentNode) {
     header.parentNode.insertBefore(bar, header.nextSibling);
@@ -43,16 +50,21 @@ window.addEventListener("DOMContentLoaded", function () {
     document.body.insertBefore(bar, document.body.firstChild);
   }
 
-  // Switch-functie (maakt nieuw pad, behoudt subpagina)
+  // Switch-functie (altijd uit ACTUEEL pad de subpage halen!)
   function goToDoc() {
     const newVersion = document.getElementById("fortes-version-switch").value;
     const newLang = document.getElementById("fortes-lang-switch").value;
+    const parts = getCurrentParts();
+    // Sla oude versie+taal over, neem de rest
+    const subParts = parts.slice(2);
     let newPath = `/${newVersion}/${newLang}`;
-    if (subPath) {
-      newPath += `/${subPath}`;
+    if (subParts.length) {
+      newPath += '/' + subParts.join('/');
     }
     window.location.pathname = newPath;
   }
+
   document.getElementById("fortes-version-switch").addEventListener("change", goToDoc);
   document.getElementById("fortes-lang-switch").addEventListener("change", goToDoc);
 });
+
