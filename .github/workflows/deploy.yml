@@ -21,7 +21,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install mkdocs-material
 
-      # === SHARED FILES KOPIËREN (AANRADER: ZET DIT IN /docs/shared/) ===
       - name: Copy shared custom-code and images to all versions/languages
         run: |
           VERSIONS="20 19 18"
@@ -30,10 +29,11 @@ jobs:
             for L in $LANGS; do
               rm -rf docs/$V/$L/custom-code
               rm -rf docs/$V/$L/images
-              cp -r docs/shared/custom-code docs/$V/$L/
-              cp -r docs/shared/images docs/$V/$L/
+              cp -r custom-code docs/$V/$L/
+              cp -r images docs/$V/$L/
             done
           done
+
 
       - name: Build all versions & languages
         run: |
