@@ -17,14 +17,12 @@ theme:
       primary: '#182A54'
       accent: '#2AACE2'
 
-
 extra_css:
   - custom-code/extra.css
 
 extra_javascript:
   - custom-code/extra.js
   - custom-code/version-lang-switch.js
-
 
 markdown_extensions:
   - admonition
@@ -92,6 +90,8 @@ nav:
       - Approval workflows: apps/approval-workflows.md
       - Jira connectivity: apps/jira-connectivity.md
       - Import / Export: apps/import---export.md
-  - Release notes: release-notes.md
+  - Release notes:
+      - Overzicht: release-notes.md
+
 extra:
   generator: false
