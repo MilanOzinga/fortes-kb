@@ -11,24 +11,19 @@ window.addEventListener("DOMContentLoaded", function () {
     { code: "de", name: "Deutsch" }
   ];
 
-  // Huidige pad uitlezen
-  function getCurrentParts() {
-    return window.location.pathname.split("/").filter(Boolean);
-  }
+  // Pak het base path (bijv. /fortes-kb/)
+  const basePath = window.location.pathname.split('/').slice(0,2).join('/');
+  // Alle delen na de base (['19','en',...])
+  const pathParts = window.location.pathname.split('/').filter(Boolean).slice(1);
 
-  // Vind huidige versie en taal
-  function getCurVersion(parts) {
-    return versions.find(v => parts[0] === v) || versions[0];
-  }
-  function getCurLang(parts) {
-    return langs.find(l => parts[1] === l.code)?.code || langs[0].code;
-  }
+  // Zoek huidige versie en taal in URL
+  const curVersion = versions.find(v => pathParts[0] === v) || versions[0];
+  const curLang = langs.find(l => pathParts[1] === l.code)?.code || langs[0].code;
 
-  // Switchbar maken
-  const pathParts = getCurrentParts();
-  const curVersion = getCurVersion(pathParts);
-  const curLang = getCurLang(pathParts);
+  // Het subpad na versie en taal
+  const subPath = pathParts.slice(2).join("/");
 
+  // Bouw de switchbar HTML
   const bar = document.createElement("div");
   bar.id = "fortes-switchbar";
   bar.innerHTML = `
@@ -42,7 +37,7 @@ window.addEventListener("DOMContentLoaded", function () {
     </div>
   `;
 
-  // Plaats switchbar onder Material-header
+  // Plaats direct onder Material-header
   const header = document.querySelector('.md-header');
   if (header && header.parentNode) {
     header.parentNode.insertBefore(bar, header.nextSibling);
@@ -50,20 +45,18 @@ window.addEventListener("DOMContentLoaded", function () {
     document.body.insertBefore(bar, document.body.firstChild);
   }
 
-  // Switch-functie (altijd uit ACTUEEL pad de subpage halen!)
+  // Switch-functie (maakt nieuw pad, behoudt subpagina)
   function goToDoc() {
     const newVersion = document.getElementById("fortes-version-switch").value;
     const newLang = document.getElementById("fortes-lang-switch").value;
-    const parts = getCurrentParts();
-    // Sla oude versie+taal over, neem de rest
-    const subParts = parts.slice(2);
-    let newPath = `/${newVersion}/${newLang}`;
-    if (subParts.length) {
-      newPath += '/' + subParts.join('/');
+    let newPath = `${basePath}/${newVersion}/${newLang}`;
+    if (subPath) {
+      newPath += `/${subPath}`;
     }
+    // Forceer trailing slash (optioneel)
+    if (!newPath.endsWith('/')) newPath += '/';
     window.location.pathname = newPath;
   }
-
   document.getElementById("fortes-version-switch").addEventListener("change", goToDoc);
   document.getElementById("fortes-lang-switch").addEventListener("change", goToDoc);
 });
