@@ -1,4 +1,4 @@
-﻿site_name: Fortes Knowledge Base
+﻿site_name: ""
 docs_dir: .
 
 theme:
@@ -54,7 +54,8 @@ markdown_extensions:
   - pymdownx.tilde
 
 nav:
-  - Home: index.md
+  - FCC Essentials:
+      - Overzicht: index.md
   - Apps:
       - Apps overzicht: apps/index.md
       - General: apps/general.md
