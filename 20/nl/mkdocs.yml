@@ -56,6 +56,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Apps:
+      - Apps overzicht: apps/index.md
       - General: apps/general.md
       - Principal Toolbox: apps/principal-toolbox.md
       - Start: apps/start.md
