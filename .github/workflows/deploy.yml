@@ -21,6 +21,24 @@ jobs:
           python -m pip install --upgrade pip
           pip install mkdocs-material
 
+      # ---------- SYMLINK FIX-STEP HIER TUSSENVOEGEN ----------
+      - name: Fix symlinks for CI (custom-code, images)
+        run: |
+          for V in 20 19 18; do
+            for L in nl en de; do
+              # custom-code
+              if [ -L "docs/$V/$L/custom-code" ]; then
+                rm docs/$V/$L/custom-code
+                cp -r docs/20/nl/custom-code docs/$V/$L/custom-code
+              fi
+              # images
+              if [ -L "docs/$V/$L/images" ]; then
+                rm docs/$V/$L/images
+                cp -r docs/20/nl/images docs/$V/$L/images
+              fi
+            done
+          done
+
       - name: Build all versions & languages
         run: |
           VERSIONS="20 19 18"
