@@ -1,7 +1,13 @@
-site_name: Fortes Knowledge Base
+﻿site_name: Fortes Knowledge Base
 docs_dir: .
 
 theme:
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.indexes
+    - navigation.top
   name: material
   logo: images/logo.png
   palette:
