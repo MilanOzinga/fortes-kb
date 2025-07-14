@@ -1,6 +1,6 @@
-﻿# FCC Essentials
+﻿# Start
 
-Willkommen bei der Fortes Change Cloud Dokumentation.
+Welkom bij de Fortes Change Cloud documentatie.
 
 <div style='display: flex; gap: 3rem; flex-wrap: wrap; margin-top: 2rem;'>
 
@@ -29,8 +29,8 @@ Willkommen bei der Fortes Change Cloud Dokumentation.
 <div style='min-width:220px;'>
 <h2>Release notes</h2>
 <ul>
-  <li><a href='release-notes.md'>Alle Release Notes</a></li>
+  <li><a href='release-notes.md'>Alle release notes</a></li>
 </ul>
-<p style='color: #888; font-size: 0.95em;'>Neue Release Notes erscheinen hier automatisch.</p>
+<p style='color: #888; font-size: 0.95em;'>Nieuwe releasenotes verschijnen hier automatisch.</p>
 </div>
 </div>
