@@ -31,7 +31,7 @@ markdown_extensions:
 - pymdownx.tilde
 nav:
 - Start:
-    Overzicht: index.md
+  - Overzicht: index.md
 - Gebruikershandleidingen:
   - Overzicht: user-docs/index.md
   - FCC Essentials:
@@ -41,15 +41,15 @@ nav:
     - Archiveren en verwijderen: user-docs/fcc-essentials/archive-and-remove.md
     - Gebruik van canvassen: user-docs/fcc-essentials/use-of-canvasses.md
   - Strategie:
-    - Mijn strategieën: user-docs/strategy/my-strategies.md
+    - Mijn strategieÃ«n: user-docs/strategy/my-strategies.md
     - Strategie: user-docs/strategy/strategy.md
     - Dashboard: user-docs/strategy/dashboard-strategy.md
   - Inzichten:
-      Dashboards: user-docs/insights/dashboard-insights.md
+    - Dashboards: user-docs/insights/dashboard-insights.md
   - Portfolio:
-    - Mijn portfolio’s: user-docs/portfolio/my-portfolios/index.md
+    - Mijn portfolioâ€™s: user-docs/portfolio/my-portfolios/index.md
     - PTB-portefeuilles: user-docs/portfolio/ptb-portfolios/index.md
-    - PPM en Hybride portfolio’s:
+    - PPM en Hybride portfolioâ€™s:
       - Overzicht: user-docs/portfolio/ppm-and-hybrid-portfolios/overview.md
       - Funnel: user-docs/portfolio/ppm-and-hybrid-portfolios/funnel.md
       - Doelstellingen: user-docs/portfolio/ppm-and-hybrid-portfolios/objectives.md
@@ -57,23 +57,23 @@ nav:
       - Mijlpaalplanning: user-docs/portfolio/ppm-and-hybrid-portfolios/milestone-planning.md
       - Vaardigheidscapaciteitsplanning: user-docs/portfolio/ppm-and-hybrid-portfolios/skill-capacity-planning.md
       - Teamcapaciteitsplanning: user-docs/portfolio/ppm-and-hybrid-portfolios/team-capacity-planning.md
-      - Financiële planning: user-docs/portfolio/ppm-and-hybrid-portfolios/financial-planning.md
+      - FinanciÃ«le planning: user-docs/portfolio/ppm-and-hybrid-portfolios/financial-planning.md
       - Workflows: user-docs/portfolio/ppm-and-hybrid-portfolios/workflows.md
       - Resultaatmeting: user-docs/portfolio/ppm-and-hybrid-portfolios/key-results-tracking.md
       - Dashboard: user-docs/portfolio/ppm-and-hybrid-portfolios/dashboard.md
       - Rapportage: user-docs/portfolio/ppm-and-hybrid-portfolios/reporting.md
       - Financieel overzicht: user-docs/portfolio/ppm-and-hybrid-portfolios/financial-grid.md
       - Issues: user-docs/portfolio/ppm-and-hybrid-portfolios/issues.md
-      - Risico’s: user-docs/portfolio/ppm-and-hybrid-portfolios/risks.md
+      - Risicoâ€™s: user-docs/portfolio/ppm-and-hybrid-portfolios/risks.md
       - Documenten: user-docs/portfolio/ppm-and-hybrid-portfolios/documents.md
       - Aangepaste indeling: user-docs/portfolio/ppm-and-hybrid-portfolios/custom-layout.md
-    - Enterprise portfolio’s:
+    - Enterprise portfolioâ€™s:
       - Vaardigheidscapaciteitsplanning: user-docs/portfolio/enterprise-portfolio/skill-capacity-planning-enterprise.md
       - Teamcapaciteitsplanning: user-docs/portfolio/enterprise-portfolio/team-capacity-planning-enterprise.md
-      - Financiële planning: user-docs/portfolio/enterprise-portfolio/financial-planning-enterprise.md
+      - FinanciÃ«le planning: user-docs/portfolio/enterprise-portfolio/financial-planning-enterprise.md
       - Dashboard: user-docs/portfolio/enterprise-portfolio/dashboard-enterprise.md
   - Agile programma:
-      Mijn Agile programma’s:
+    - Mijn Agile programmaâ€™s:
       - Portfolio-items splitsen: user-docs/agile-program/my-agile-program/splitting-portfolio-items.md
       - Kanban: user-docs/agile-program/my-agile-program/kanban.md
       - PI-roadmap: user-docs/agile-program/my-agile-program/pi-roadmap.md
@@ -87,50 +87,48 @@ nav:
       - Kanban: user-docs/project/my-projects/kanban-projects.md
       - Vaardigheidscapaciteitsplanning: user-docs/project/my-projects/skill-capacity-planning-projects.md
       - Teamcapaciteitsplanning: user-docs/project/my-projects/team-capacity-planning-projects.md
-      - Financiële planning: user-docs/project/my-projects/financial-planning-projects.md
+      - FinanciÃ«le planning: user-docs/project/my-projects/financial-planning-projects.md
       - Resource-allocatie: user-docs/project/my-projects/resource-allocation-projects.md
       - Klassieke rapportage: user-docs/project/my-projects/classic-reporting.md
       - Portfolio-rapportage: user-docs/project/my-projects/portfolio-reporting.md
       - Issues: user-docs/project/my-projects/issues-projects.md
-      - Risico’s: user-docs/project/my-projects/risks-projects.md
+      - Risicoâ€™s: user-docs/project/my-projects/risks-projects.md
       - Kwaliteitsbeoordelingen: user-docs/project/my-projects/quality-reviews.md
       - Wijzigingen: user-docs/project/my-projects/changes-projects.md
       - Lessons learned: user-docs/project/my-projects/lessons-learned-projects.md
       - Documenten: user-docs/project/my-projects/documents-projects.md
       - Aangepaste indeling: user-docs/project/my-projects/custom-layout-projects.md
   - Teams:
-      Mijn teams: user-docs/teams/my-teams/index.md
+    - Mijn teams: user-docs/teams/my-teams/index.md
   - Uren:
-      Mijn uren: user-docs/hours/my-hours/index.md
+    - Mijn uren: user-docs/hours/my-hours/index.md
   - Goedkeuringsworkflows:
     - Mijn open workflow-taken:
-        Workflow: user-docs/approval-workflows/my-open-workflow-tasks/workflow.md
+      - Workflow: user-docs/approval-workflows/my-open-workflow-tasks/workflow.md
     - Workflows:
-        Workflow: user-docs/approval-workflows/workflows/workflow.md
+      - Workflow: user-docs/approval-workflows/workflows/workflow.md
     - Configuraties:
       - Groepen: user-docs/approval-workflows/configurations/groups.md
       - Rollen: user-docs/approval-workflows/configurations/roles.md
-      - Categorieën: user-docs/approval-workflows/configurations/categories.md
+      - CategorieÃ«n: user-docs/approval-workflows/configurations/categories.md
 - Technische documentatie:
   - Overzicht: technical-docs/index.md
   - BI-connectiviteit:
-      Connectors: technical-docs/bl-connectivity/connector.md
+    - Connectors: technical-docs/bl-connectivity/connector.md
   - Jira-connectiviteit:
     - Jira-applicatiekoppelingen: technical-docs/jira-connectivity/jira-application-links.md
-    - Jira-teams beschikbaar in portfolio’s: technical-docs/jira-connectivity/jira-teams-available-in-portfolios.md
-    - Jira-teams beschikbaar in programma’s en projecten: technical-docs/jira-connectivity/jira-teams-available-in-programs-and-portfolios.md
+    - Jira-teams beschikbaar in portfolioâ€™s: technical-docs/jira-connectivity/jira-teams-available-in-portfolios.md
+    - Jira-teams beschikbaar in programmaâ€™s en projecten: technical-docs/jira-connectivity/jira-teams-available-in-programs-and-portfolios.md
   - Azure DevOps-connectiviteit:
     - Azure DevOps-applicatiekoppelingen: technical-docs/azure-devops-connectivity/azure-devops-application-links.md
-    - Azure-teams beschikbaar in portfolio’s: technical-docs/azure-devops-connectivity/azure-teams-available-in-portfolios.md
-    - Azure-teams beschikbaar in programma’s en projecten: technical-docs/azure-devops-connectivity/azure-teams-available-in-programs-and-portfolios.md
+    - Azure-teams beschikbaar in portfolioâ€™s: technical-docs/azure-devops-connectivity/azure-teams-available-in-portfolios.md
+    - Azure-teams beschikbaar in programmaâ€™s en projecten: technical-docs/azure-devops-connectivity/azure-teams-available-in-programs-and-portfolios.md
   - Import/export: technical-docs/imports-exports/index.md
   - REST API documentatie: technical-docs/rest-api-documentation.md
 - Releasenotes:
   - Overzicht: release-notes/index.md
-  - "19.0": release-notes/19.0.md
-  - "20.0": release-notes/20.0.md
 - Support:
-    Overzicht: support/index.md
+  - Overzicht: support/index.md
 site_name: ""
 theme:
   palette:

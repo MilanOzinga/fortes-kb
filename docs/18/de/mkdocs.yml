@@ -31,9 +31,9 @@ markdown_extensions:
 - pymdownx.tilde
 nav:
 - Start:
-    Übersicht: index.md
+  - Ãœbersicht: index.md
 - Benutzerhandbuch:
-  - Übersicht: user-docs/index.md
+  - Ãœbersicht: user-docs/index.md
   - FCC Essentials:
     - Navigation: user-docs/fcc-essentials/navigation.md
     - Eigenschaften-Panel: user-docs/fcc-essentials/properties-panel.md
@@ -45,35 +45,35 @@ nav:
     - Strategie: user-docs/strategy/strategy.md
     - Dashboard: user-docs/strategy/dashboard-strategy.md
   - Einblicke:
-      Dashboards: user-docs/insights/dashboard-insights.md
+    - Dashboards: user-docs/insights/dashboard-insights.md
   - Portfolio:
     - Meine Portfolios: user-docs/portfolio/my-portfolios/index.md
     - PTB-Portfolios: user-docs/portfolio/ptb-portfolios/index.md
     - PPM- und hybride Portfolios:
-      - Ãœbersicht: user-docs/portfolio/ppm-and-hybrid-portfolios/overview.md
+      - ÃƒÅ“bersicht: user-docs/portfolio/ppm-and-hybrid-portfolios/overview.md
       - Funnel: user-docs/portfolio/ppm-and-hybrid-portfolios/funnel.md
       - Ziele: user-docs/portfolio/ppm-and-hybrid-portfolios/objectives.md
-      - Abwägung: user-docs/portfolio/ppm-and-hybrid-portfolios/balancing.md
+      - AbwÃ¤gung: user-docs/portfolio/ppm-and-hybrid-portfolios/balancing.md
       - Meilensteinplanung: user-docs/portfolio/ppm-and-hybrid-portfolios/milestone-planning.md
-      - Skill-Kapazitätsplanung: user-docs/portfolio/ppm-and-hybrid-portfolios/skill-capacity-planning.md
-      - Team-Kapazitätsplanung: user-docs/portfolio/ppm-and-hybrid-portfolios/team-capacity-planning.md
+      - Skill-KapazitÃ¤tsplanung: user-docs/portfolio/ppm-and-hybrid-portfolios/skill-capacity-planning.md
+      - Team-KapazitÃ¤tsplanung: user-docs/portfolio/ppm-and-hybrid-portfolios/team-capacity-planning.md
       - Finanzplanung: user-docs/portfolio/ppm-and-hybrid-portfolios/financial-planning.md
       - Workflows: user-docs/portfolio/ppm-and-hybrid-portfolios/workflows.md
       - Ergebnis-Tracking: user-docs/portfolio/ppm-and-hybrid-portfolios/key-results-tracking.md
       - Dashboard: user-docs/portfolio/ppm-and-hybrid-portfolios/dashboard.md
       - Berichterstattung: user-docs/portfolio/ppm-and-hybrid-portfolios/reporting.md
-      - Finanzübersicht: user-docs/portfolio/ppm-and-hybrid-portfolios/financial-grid.md
+      - FinanzÃ¼bersicht: user-docs/portfolio/ppm-and-hybrid-portfolios/financial-grid.md
       - Probleme: user-docs/portfolio/ppm-and-hybrid-portfolios/issues.md
       - Risiken: user-docs/portfolio/ppm-and-hybrid-portfolios/risks.md
       - Dokumente: user-docs/portfolio/ppm-and-hybrid-portfolios/documents.md
       - Benutzerdefiniertes Layout: user-docs/portfolio/ppm-and-hybrid-portfolios/custom-layout.md
     - Unternehmensportfolios:
-      - Skill-Kapazitätsplanung: user-docs/portfolio/enterprise-portfolio/skill-capacity-planning-enterprise.md
-      - Team-Kapazitätsplanung: user-docs/portfolio/enterprise-portfolio/team-capacity-planning-enterprise.md
+      - Skill-KapazitÃ¤tsplanung: user-docs/portfolio/enterprise-portfolio/skill-capacity-planning-enterprise.md
+      - Team-KapazitÃ¤tsplanung: user-docs/portfolio/enterprise-portfolio/team-capacity-planning-enterprise.md
       - Finanzplanung: user-docs/portfolio/enterprise-portfolio/financial-planning-enterprise.md
       - Dashboard: user-docs/portfolio/enterprise-portfolio/dashboard-enterprise.md
   - Agile-Programm:
-      Meine agilen Programme:
+    - Meine agilen Programme:
       - Portfolioposten aufteilen: user-docs/agile-program/my-agile-program/splitting-portfolio-items.md
       - Kanban: user-docs/agile-program/my-agile-program/kanban.md
       - PI-Roadmap: user-docs/agile-program/my-agile-program/pi-roadmap.md
@@ -85,52 +85,50 @@ nav:
       - Dashboard: user-docs/project/my-projects/dashboard-projects.md
       - Gantt: user-docs/project/my-projects/gantt.md
       - Kanban: user-docs/project/my-projects/kanban-projects.md
-      - Skill-Kapazitätsplanung: user-docs/project/my-projects/skill-capacity-planning-projects.md
-      - Team-Kapazitätsplanung: user-docs/project/my-projects/team-capacity-planning-projects.md
+      - Skill-KapazitÃ¤tsplanung: user-docs/project/my-projects/skill-capacity-planning-projects.md
+      - Team-KapazitÃ¤tsplanung: user-docs/project/my-projects/team-capacity-planning-projects.md
       - Finanzplanung: user-docs/project/my-projects/financial-planning-projects.md
       - Ressourcenzuteilung: user-docs/project/my-projects/resource-allocation-projects.md
       - Klassische Berichterstattung: user-docs/project/my-projects/classic-reporting.md
       - Portfolio-Berichterstattung: user-docs/project/my-projects/portfolio-reporting.md
       - Probleme: user-docs/project/my-projects/issues-projects.md
       - Risiken: user-docs/project/my-projects/risks-projects.md
-      - Qualitätsüberprüfungen: user-docs/project/my-projects/quality-reviews.md
-      - Änderungen: user-docs/project/my-projects/changes-projects.md
+      - QualitÃ¤tsÃ¼berprÃ¼fungen: user-docs/project/my-projects/quality-reviews.md
+      - Ã„nderungen: user-docs/project/my-projects/changes-projects.md
       - Lessons learned: user-docs/project/my-projects/lessons-learned-projects.md
       - Dokumente: user-docs/project/my-projects/documents-projects.md
       - Benutzerdefiniertes Layout: user-docs/project/my-projects/custom-layout-projects.md
   - Teams:
-      Meine Teams: user-docs/teams/my-teams/index.md
+    - Meine Teams: user-docs/teams/my-teams/index.md
   - Stunden:
-      Meine Stunden: user-docs/hours/my-hours/index.md
+    - Meine Stunden: user-docs/hours/my-hours/index.md
   - Genehmigungs-Workflows:
     - Meine offenen Workflow-Aufgaben:
-        Workflow: user-docs/approval-workflows/my-open-workflow-tasks/workflow.md
+      - Workflow: user-docs/approval-workflows/my-open-workflow-tasks/workflow.md
     - Workflows:
-        Workflow: user-docs/approval-workflows/workflows/workflow.md
+      - Workflow: user-docs/approval-workflows/workflows/workflow.md
     - Konfigurationen:
       - Gruppen: user-docs/approval-workflows/configurations/groups.md
       - Rollen: user-docs/approval-workflows/configurations/roles.md
       - Kategorien: user-docs/approval-workflows/configurations/categories.md
 - Technische Dokumentation:
-  - Übersicht: technical-docs/index.md
-  - BI-Konnektivität:
-      Konnektoren: technical-docs/bl-connectivity/connector.md
-  - Jira-Konnektivität:
-    - Jira-Anwendungsverknüpfungen: technical-docs/jira-connectivity/jira-application-links.md
-    - Jira-Teams in Portfolios verfügbar: technical-docs/jira-connectivity/jira-teams-available-in-portfolios.md
-    - Jira-Teams in Programmen und Projekten verfügbar: technical-docs/jira-connectivity/jira-teams-available-in-programs-and-portfolios.md
-  - Azure DevOps-Konnektivität:
-    - Azure DevOps-Anwendungsverknüpfungen: technical-docs/azure-devops-connectivity/azure-devops-application-links.md
-    - Azure-Teams in Portfolios verfügbar: technical-docs/azure-devops-connectivity/azure-teams-available-in-portfolios.md
-    - Azure-Teams in Programmen und Projekten verfügbar: technical-docs/azure-devops-connectivity/azure-teams-available-in-programs-and-portfolios.md
+  - Ãœbersicht: technical-docs/index.md
+  - BI-KonnektivitÃ¤t:
+    - Konnektoren: technical-docs/bl-connectivity/connector.md
+  - Jira-KonnektivitÃ¤t:
+    - Jira-AnwendungsverknÃ¼pfungen: technical-docs/jira-connectivity/jira-application-links.md
+    - Jira-Teams in Portfolios verfÃ¼gbar: technical-docs/jira-connectivity/jira-teams-available-in-portfolios.md
+    - Jira-Teams in Programmen und Projekten verfÃ¼gbar: technical-docs/jira-connectivity/jira-teams-available-in-programs-and-portfolios.md
+  - Azure DevOps-KonnektivitÃ¤t:
+    - Azure DevOps-AnwendungsverknÃ¼pfungen: technical-docs/azure-devops-connectivity/azure-devops-application-links.md
+    - Azure-Teams in Portfolios verfÃ¼gbar: technical-docs/azure-devops-connectivity/azure-teams-available-in-portfolios.md
+    - Azure-Teams in Programmen und Projekten verfÃ¼gbar: technical-docs/azure-devops-connectivity/azure-teams-available-in-programs-and-portfolios.md
   - Import/Export: technical-docs/imports-exports/index.md
   - REST-API-Dokumentation: technical-docs/rest-api-documentation.md
 - Release Notes:
-  - Übersicht: release-notes/index.md
-  - "19.0": release-notes/19.0.md
-  - "20.0": release-notes/20.0.md
+  - Ãœbersicht: release-notes/index.md
 - Support:
-    Übersicht: support/index.md
+  - Ãœbersicht: support/index.md
 site_name: ""
 theme:
   palette:
