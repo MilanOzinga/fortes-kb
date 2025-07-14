@@ -19,10 +19,9 @@
   font-weight: 400;
   font-style: normal;
 }
-
 /* Fallbacks (Google Fonts) indien niet beschikbaar */
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
 
 /* ======= ALGEMEEN (body en basistekst) ======= */
 body,
@@ -61,7 +60,7 @@ body,
   margin-bottom: 0.35em;
 }
 
-/* ======= PARAGRAFEN EN LIJSTEN ======= */
+/* ======= PARAGRAFEN EN LIJSTEN (alleen ARTIKELen, niet menu) ======= */
 .md-typeset p, p,
 .md-typeset li, li {
   font-family: 'Campton Book', 'Open Sans', Arial, sans-serif;
@@ -84,20 +83,49 @@ body,
 }
 
 /* ======= SIDEBAR MENU FONTS ======= */
-/* Hoofdmenu-items (User Docs, FCC Essentials, Strategy etc) */
-.md-nav__item .md-nav__link.md-nav__link--active,  /* Actief hoofdmenu */
-.md-nav__item.md-nav__item--section > .md-nav__link, /* Hoofdmenu */
-.md-nav__title { /* Menu-sectie koppen */
+
+/* Hoofdmenu’s (bv. Start, User Docs, Strategy, etc.) */
+.md-nav__title,
+.md-nav__item.md-nav__item--section > .md-nav__link,
+.md-nav__item .md-nav__link.md-nav__link--active { 
   font-family: 'Campton Medium', 'Open Sans SemiBold', 'Open Sans', Arial, sans-serif !important;
   font-weight: 500 !important;
+  font-size: 1em !important;
+  color: #283EAF !important; /* paarsblauw zoals je screenshot */
+  background: none !important;
   letter-spacing: 0.01em;
 }
 
-/* Submenu-items in sidebar (alles dieper liggend) */
+/* Submenu’s (alle diepere lagen) */
 .md-nav__item .md-nav__link:not(.md-nav__link--active):not(.md-nav__item--section > .md-nav__link) {
   font-family: 'Campton Book', 'Open Sans', Arial, sans-serif !important;
   font-weight: 400 !important;
+  font-size: 1em !important;
+  color: #1B224B !important;  /* donkere blauwzwart voor submenu’s */
+  background: none !important;
   letter-spacing: 0.01em;
+}
+
+/* Submenu (actief) */
+.md-nav__item .md-nav__link--active:not(.md-nav__item--section > .md-nav__link) {
+  color: #283EAF !important;  /* Hoofdmenu-active kleur */
+  background: none !important;
+}
+
+/* Reset aanpassingen voor spacing van menu-items (gewoon zoals Material is) */
+.md-nav__item,
+.md-nav__link {
+  margin: 0 !important;
+  padding: 0.5em 0 0.5em 0 !important; /* Standaard spacing Material, kun je weghalen als die teveel is */
+  line-height: normal !important;
+  box-shadow: none !important;
+}
+
+/* Menu iconen netjes uitlijnen */
+.md-nav__icon {
+  margin-right: 0.55em !important;
+  vertical-align: middle !important;
+  font-size: 1em !important;
 }
 
 /* ======= CALLOUTS / ADMONITIONS ======= */
