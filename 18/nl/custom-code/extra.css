@@ -1,32 +1,128 @@
-/* Headings strak Fortes/Odoo */
-.md-typeset h1 { color: #182A54; }
-.md-typeset h2 { color: #2AACE2; }
+/* =================== FORTES BRAND TYPOGRAFIE ======================= */
 
-/* Info callouts als ice blue */
+/* 1. Fonts laden: Apotek, Campton (eerst lokaal proberen, anders val terug) */
+@font-face {
+  font-family: 'Apotek Regular';
+  src: url('/fonts/Apotek-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Campton Medium';
+  src: url('/fonts/Campton-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Campton Book';
+  src: url('/fonts/Campton-Book.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Fallbacks (Google Fonts) indien niet beschikbaar */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+
+/* ======= ALGEMEEN (body en basistekst) ======= */
+body,
+.md-typeset {
+  font-family: 'Campton Book', 'Open Sans', Arial, sans-serif;
+  font-size: 16px;
+  color: #182A54;
+  background: #fff;
+  line-height: 1.5;
+}
+
+/* ======= HEADINGS volgens Fortes huisstijl ======= */
+.md-typeset h1, h1 {
+  font-family: 'Apotek Regular', 'Roboto Condensed', Arial, sans-serif;
+  color: #2AACE2;
+  font-size: 2.2em;
+  line-height: 1.0;
+  margin-bottom: 0.5em;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+.md-typeset h2, h2 {
+  font-family: 'Campton Medium', 'Open Sans', Arial, sans-serif;
+  color: #FAA81C;
+  font-size: 1.5em;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 0.45em;
+}
+.md-typeset h3, h3 {
+  font-family: 'Campton Medium', 'Open Sans', Arial, sans-serif;
+  color: #182A54;
+  font-size: 1.1em;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 0.35em;
+}
+
+/* ======= PARAGRAFEN EN LIJSTEN ======= */
+.md-typeset p, p,
+.md-typeset li, li {
+  font-family: 'Campton Book', 'Open Sans', Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  color: #182A54;
+  line-height: 1.5;
+  margin-bottom: 1.2em;
+}
+.md-typeset strong, b {
+  font-family: 'Campton Medium', 'Open Sans', Arial, sans-serif;
+  font-weight: 500;
+}
+.md-typeset ul,
+.md-typeset ol {
+  margin-bottom: 1.4em;
+  margin-left: 1.4em;
+  font-family: 'Campton Book', 'Open Sans', Arial, sans-serif;
+}
+
+/* ======= CALLOUTS / ADMONITIONS ======= */
 .md-typeset .admonition.info {
   background: #F2FAFE;
   border-left: 4px solid #2AACE2;
   color: #182A54;
+  font-family: 'Campton Book', 'Open Sans', Arial, sans-serif;
 }
-
-/* Waarschuwing/callout */
 .md-typeset .admonition.warning {
   background: #F2FAFE;
-  border-left: 4px solid #182A54;
+  border-left: 4px solid #FAA81C;
   color: #182A54;
+  font-family: 'Campton Book', 'Open Sans', Arial, sans-serif;
 }
 
-/* Achtergrond overal wit */
-body,
-.md-main__inner,
-.md-content,
-.md-sidebar--secondary,
-.md-nav--secondary {
-  background: #fff !important;
+/* ======= BUTTONS ======= */
+.md-button,
+button,
+input[type="submit"],
+input[type="button"] {
+  font-family: 'Campton Medium', 'Open Sans', Arial, sans-serif;
+  font-weight: 500;
+  background: #2AACE2;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.5em 1.3em;
+  font-size: 1em;
+  border: none;
+  box-shadow: 0 2px 6px rgba(42,172,226,0.08);
+  transition: background 0.15s;
+}
+.md-button:hover,
+button:hover {
+  background: #182A54;
+  color: #FAA81C;
 }
 
-/* Table of contents rechts */
+/* ======= TABLE OF CONTENTS ======= */
 .md-nav--secondary {
+  font-family: 'Campton Book', 'Open Sans', Arial, sans-serif;
+  font-size: 1em;
+  color: #182A54;
   border-radius: 9px;
   box-shadow: 0 2px 8px 0 rgba(42,172,226,0.07);
   padding: 1em 0.9em;
@@ -35,7 +131,36 @@ body,
   background: #fff !important;
 }
 
-/* === HEADER, LOGO, SEARCH & SWITCHER =========== */
+/* ======= TABLES ======= */
+.md-typeset table {
+  font-family: 'Campton Book', 'Open Sans', Arial, sans-serif;
+  font-size: 1em;
+}
+.md-typeset th,
+.md-typeset td {
+  padding: 0.6em 1em;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+/* ======= CODE BLOCKS ======= */
+.md-typeset code,
+.md-typeset pre {
+  font-family: 'JetBrains Mono', 'Fira Mono', 'Consolas', monospace;
+  font-size: 0.95em;
+  color: #2AACE2;
+}
+
+/* ======= QUOTES ======= */
+.md-typeset blockquote {
+  font-family: 'Campton Book', 'Open Sans', Arial, sans-serif;
+  border-left: 4px solid #FAA81C;
+  background: #fff8e1;
+  padding: 0.8em 1em;
+  color: #182A54;
+  font-style: italic;
+}
+
+/* ======= HEADER, LOGO, SEARCH & SWITCHER ======= */
 .md-header {
   width: 100vw !important;
   max-width: 100vw !important;
@@ -48,8 +173,6 @@ body,
   z-index: 100;
   position: relative;
 }
-
-/* Central container voor alles in de header */
 .md-header__inner {
   max-width: 1120px !important;
   width: 100%;
@@ -62,8 +185,6 @@ body,
   justify-content: space-between;
   gap: 1.5em;
 }
-
-/* Logo links */
 .md-header__title {
   margin-left: 0 !important;
   padding-left: 0 !important;
@@ -86,17 +207,15 @@ body,
   box-shadow: 0 0 0 2px #2AACE2;
   display: block;
 }
-
-/* Zoekbalk (rechts, maar niet 100vw breed!) */
 .md-search__form {
   max-width: 420px !important;
   width: 420px !important;
   min-width: 160px !important;
-  height: 48px !important;           /* IETS hoger voor meer balans */
+  height: 48px !important;
   border-radius: 7px !important;
   border: 1.5px solid #dadada !important;
   background: #f7f7fa !important;
-  margin-left: auto !important;   /* <- zoekbalk naar rechts */
+  margin-left: auto !important;
   margin-right: 0 !important;
   box-shadow: 0 2px 8px 0 rgba(42,172,226,0.08) !important;
   display: flex;
@@ -111,7 +230,7 @@ body,
   box-shadow: none !important;
   padding-left: 0.7em !important;
   padding-right: 0.7em !important;
-  height: 44px !important;           /* IETS hoger */
+  height: 44px !important;
   font-size: 1.08em !important;
 }
 .md-search__input::placeholder { color: #aab6c8 !important; opacity: 1; }
@@ -126,15 +245,13 @@ body,
   z-index: 11;
   display: flex !important;
   align-items: center;
-  height: 48px !important;       /* IETS hoger dan default */
+  height: 48px !important;
   background: #f7f7fa !important;
   border-radius: 7px !important;
   border: 1.5px solid #dadada !important;
   padding: 0 11px !important;
   box-shadow: 0 2px 8px 0 rgba(42,172,226,0.07) !important;
 }
-
-/* De select zelf: nog iets groter */
 .md-version__select, .md-lang__select {
   min-width: 120px !important;
   height: 39px !important;
@@ -153,7 +270,6 @@ body,
   background-size: 18px 18px;
   font-size: 1.08em;
 }
-
 .md-version__select:focus, .md-lang__select:focus { background: #e4e6ed; }
 .md-version__select option, .md-lang__select option { color: #222; background: #f7f7fa; }
 
@@ -168,21 +284,7 @@ body,
   background: #fff !important;
 }
 
-/* Responsive tweaks */
-@media (max-width: 900px) {
-  .md-header__inner { max-width: 99vw !important; padding: 0 7px !important; }
-  .md-search__form { width: 92vw !important; max-width: 98vw !important; min-width: 90px !important; }
-  .md-version__container { margin-left: 0.5em !important; }
-}
-@media (max-width: 600px) {
-  .md-header__inner { max-width: 100vw !important; padding: 0 2vw !important; }
-  .md-search__form { min-width: 60px !important; max-width: 99vw !important; }
-  .md-header__title img { height: 36px !important; }
-  .md-version__select, .md-lang__select { min-width: 70px !important; height: 32px !important; font-size: 0.96em; }
-  .md-header__source, .md-version__container { height: 36px !important; padding: 0 5px !important;}
-}
-
-/* --- Fortes switchbar en selects (jouw originele code) --- */
+/* --- Fortes switchbar en selects --- */
 #fortes-switchbar {
   background: #f7f7fa;
   border-bottom: 1px solid #e0e0e7;
@@ -229,4 +331,18 @@ body,
   .switchbar-inner { margin-right: 0.5em; }
   #fortes-switchbar { min-height: 30px; }
   .switchbar-select { font-size: 0.98em; }
+}
+
+/* ======= RESPONSIVE TWEAKS ======= */
+@media (max-width: 900px) {
+  .md-header__inner { max-width: 99vw !important; padding: 0 7px !important; }
+  .md-search__form { width: 92vw !important; max-width: 98vw !important; min-width: 90px !important; }
+  .md-version__container { margin-left: 0.5em !important; }
+}
+@media (max-width: 600px) {
+  .md-header__inner { max-width: 100vw !important; padding: 0 2vw !important; }
+  .md-search__form { min-width: 60px !important; max-width: 99vw !important; }
+  .md-header__title img { height: 36px !important; }
+  .md-version__select, .md-lang__select { min-width: 70px !important; height: 32px !important; font-size: 0.96em; }
+  .md-header__source, .md-version__container { height: 36px !important; padding: 0 5px !important;}
 }
